@@ -14,7 +14,7 @@ def restar(numero1, numero2):
 @app.get("/")
 def inicio():
     return jsonify(
-        mensaje="API CI/CD funcionando",
+        mensaje="API CI/CD desplegada automáticamente en AWS",
         estado="ok",
     )
 

@@ -23,7 +23,7 @@ def test_inicio():
     respuesta = cliente.get("/")
 
     assert respuesta.status_code == 200
-    assert respuesta.get_json()["mensaje"] == "API CI/CD funcionando"
+    assert respuesta.get_json()["mensaje"] == "API CI/CD desplegada automáticamente en AWS"
     assert respuesta.get_json()["estado"] == "ok"
 
 
