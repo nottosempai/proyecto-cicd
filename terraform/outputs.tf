@@ -17,3 +17,8 @@ output "cloudwatch_log_group" {
   description = "Grupo de logs de la aplicación"
   value       = aws_cloudwatch_log_group.aplicacion.name
 }
+
+output "github_actions_role_arn" {
+  description = "Rol asumido por GitHub Actions mediante OIDC"
+  value       = aws_iam_role.github_actions.arn
+}
