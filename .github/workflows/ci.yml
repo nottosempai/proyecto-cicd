@@ -26,3 +26,6 @@ jobs:
 
       - name: Ejecutar pruebas
         run: python -m pytest
+
+      - name: Construir imagen Docker
+        run: docker build -t proyecto-cicd:${{ github.sha }} .
